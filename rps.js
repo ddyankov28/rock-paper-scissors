@@ -52,7 +52,7 @@ let won = 0
 let draw = 0
 let lost = 0
 
-const container = document.querySelector("#container");
+const container = document.querySelector(".container");
 const rockButton = document.createElement("button");
 const paperButton = document.createElement("button");
 const scissorsButton = document.createElement("button");
