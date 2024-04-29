@@ -11,11 +11,11 @@ body {
 }
 
 .title {
-    padding: 60px;
+    padding: 40px;
     text-align: center;
     font-family: 'Press Start 2P';
     font-size: 40px;
-    animation: lights 5s 750ms linear infinite;
+    animation: lights 5s infinite;
 }
 
 @keyframes lights {
@@ -67,6 +67,35 @@ body {
   }
 
 .container {
+    display: flex;
+    flex-wrap: wrap;
     background-color: black;
     color: white;
+}
+
+.player, .cpu {
+  flex: 1;
+  padding: 20px;
+  border-style: solid;
+  text-align: center;
+}
+
+.player-score {
+  font-size: xx-large;
+}
+
+img {
+  width: 25%;
+}
+
+button {
+  font-size: xx-large;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+button:hover{
+  background-color: aqua;
+  transition: 0.5s ease-in-out;
 }
