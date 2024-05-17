@@ -26,30 +26,17 @@ function getComputerChoice(){
 
 
 function playGame(){
+    const player = document.querySelector('.player');
+    player.querySelectorAll('.select').forEach(button =>{
+        button.addEventListener('click')
+    })
 
-    let roundScore = 0;
 
-    rockButton.addEventListener("click", () =>{ 
-        roundMessage.textContent = "This round you "; 
-        roundScore = playRound("rock", getComputerChoice());
-        roundMessage.textContent += roundScore;
-    });
-    paperButton.addEventListener("click", () => {
-        roundMessage.textContent = "This round you ";
-        roundScore = playRound("paper", getComputerChoice());
-        roundMessage.textContent += roundScore;
-    });
-    scissorsButton.addEventListener("click", () => {
-        roundMessage.textContent = "This round you ";
-        roundScore = playRound("scissors", getComputerChoice());
-        roundMessage.textContent += roundScore;
-    });
 }
 
 let won = 0
 let draw = 0
 let lost = 0
 
-const container = document.querySelector(".container");
 
 playGame()

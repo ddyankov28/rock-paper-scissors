@@ -4,10 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+    background: hsl(230, 40%, 12%);
 }
 
 .title {
@@ -69,14 +66,12 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
     color: white;
 }
 
 .player, .cpu {
   flex: 1;
   padding: 20px;
-  border-style: solid;
   text-align: center;
 }
 
@@ -88,11 +83,24 @@ img {
   width: 25%;
 }
 
+.vs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 400%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 button {
-  font-size: xx-large;
+  font-size: 200%;
   padding: 20px;
   background-color: transparent;
   border-radius: 50%;
+  border-width: 20px;
+  border-style: double;
+  border-color: blue;
+  animation: lights 5s infinite;
+
 }
 
 button:hover{
